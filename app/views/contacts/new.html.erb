@@ -1,0 +1,20 @@
+<h1>Here's the page to create a new contact!</h1>
+<%= form_tag("/contacts", method: "post") do %>
+  <%= label_tag(:first_name, "First Name") %>
+  <%= text_field_tag(:first_name) %>
+  <br>
+
+  <%= label_tag(:last_name, "Last Name") %>
+  <%= text_field_tag(:last_name) %>
+  <br>
+
+  <%= label_tag(:email, "Email") %>
+  <%= text_field_tag(:email) %>
+  <br>
+
+  <%= label_tag(:phone_number, "Phone Number") %>
+  <%= text_field_tag(:phone_number) %>
+  <br>
+
+  <%= submit_tag("Create Contact") %>
+<% end %>
